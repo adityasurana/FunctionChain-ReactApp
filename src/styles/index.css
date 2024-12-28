@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+/* Tailwind Base Setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans antialiased;
+}
+
+h1 {
+  @apply text-3xl font-bold text-center mt-4;
+}
+
+input {
+  @apply border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-500 w-full;
+}
+
+button {
+  @apply bg-blue-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition-all;
+}
+
+.card {
+  @apply bg-white shadow-md border rounded-lg p-4 w-64 flex flex-col space-y-4;
+}
+
+.card-title {
+  @apply text-lg font-bold mb-2;
+}
+
+.card-label {
+  @apply block text-sm font-medium mb-1;
+}
+
+.connector {
+  stroke: #4A90E2;
+  stroke-width: 2;
+}
+
+.output-text {
+  @apply font-semibold text-gray-700 mt-2;
+}
+
+.input-label {
+	position: absolute;
+	top: 175px;
+	left: 10px;
+	background: #e29a2d;
+	color: white;
+	border-radius: 8px;
+	padding: 2px 6px;
+	font-size: 10px;
+}
+
+.output-label {
+  position: absolute;
+  top: -36px;
+  left: 10px;
+  background: #4caf79;
+  color: white;
+  border-radius: 14px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
